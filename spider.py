@@ -35,10 +35,12 @@ def geturls(url):
     for m in matches:
         #print m
         getonepage(m)
-        break
+        #break
 
 def main():
     geturls("http://tieba.baidu.com/p/1980204171")
+    geturls("http://tieba.baidu.com/p/1980204171?pn=2")
 
 if __name__ == '__main__':
     main()
+    myFile.close()
