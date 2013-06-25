@@ -33,8 +33,8 @@ def geturls(url):
     #matches = re.findall('<cc>(.+?)</cc>', webdata)
     matches = re.findall('target="_blank">(http:.+?)</a>', webdata)
     for m in matches:
-        #print m
-        getonepage(m)
+        #print m+"?see_lz=1"
+        getonepage(m+"?see_lz=1") #只看楼主
         #break
 
 def main():
