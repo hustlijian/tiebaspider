@@ -38,8 +38,12 @@ def geturls(url):
         #break
 
 def main():
-    geturls("http://tieba.baidu.com/p/1980204171")
-    geturls("http://tieba.baidu.com/p/1980204171?pn=2")
+    #geturls("http://tieba.baidu.com/p/1980204171")
+    #geturls("http://tieba.baidu.com/p/1980204171?pn=2")
+    myurl = "http://tieba.baidu.com/p/1246662838" #给定贴吧的总连载网址
+    for x in xrange(1,6):
+        #print myurl+'?pn='+str(x)
+        geturls(myurl+"?pn="+str(x))
 
 if __name__ == '__main__':
     main()
