@@ -1,4 +1,4 @@
-#!/usr/bin/env python  
+#!/usr/bin/python  
 #-*- coding: utf8 -*-  
 from urllib import urlopen
 import re
@@ -35,17 +35,18 @@ def geturls(url):
     for m in matches:
         #print m+"?see_lz=1"
         getonepage(m+"?see_lz=1") #只看楼主
-        #break
 
 def main():
     #geturls("http://tieba.baidu.com/p/1980204171")
     #geturls("http://tieba.baidu.com/p/1980204171?pn=2")
-    myurl = "http://tieba.baidu.com/p/1246662838" #给定贴吧的总连载网址
-    for x in xrange(1,6):
+    #myurl = "http://tieba.baidu.com/p/1246662838" #给定贴吧的总连载网址
+    myurl = "http://tieba.baidu.com/p/1421493478" #给定贴吧的总连载网址
+    for x in xrange(1, 6):
         #print myurl+'?pn='+str(x)
         geturls(myurl+"?pn="+str(x))
 
 if __name__ == '__main__':
     main()
+    #getonepage("http://tieba.baidu.com/p/1486446316?see_lz=1")
     myFile.close()
 
